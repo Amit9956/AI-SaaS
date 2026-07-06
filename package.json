@@ -1,0 +1,9 @@
+{
+  "name": "neurodesk-ai",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "start": "cd backend && pip install -r requirements.txt && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+  }
+}
